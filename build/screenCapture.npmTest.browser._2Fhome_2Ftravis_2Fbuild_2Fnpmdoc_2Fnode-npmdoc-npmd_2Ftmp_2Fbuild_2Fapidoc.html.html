@@ -1,0 +1,692 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/dominictarr/npmd">npmd (v1.4.0)</a>
+</h1>
+<h4>distributed npm client</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd">module npmd</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>add</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>dependents</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>help</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>install</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>packages</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>readme</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>resolve</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>tree</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>versions</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.add">module npmd.add</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.add.cli">
+            function <span class="apidocSignatureSpan">npmd.add.</span>cli
+            <span class="apidocSignatureSpan">(db)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.dependents">module npmd.dependents</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.dependents.cli">
+            function <span class="apidocSignatureSpan">npmd.dependents.</span>cli
+            <span class="apidocSignatureSpan">(db)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.help">module npmd.help</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.help.cli">
+            function <span class="apidocSignatureSpan">npmd.help.</span>cli
+            <span class="apidocSignatureSpan">(db, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.install">module npmd.install</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.install.commands">
+            function <span class="apidocSignatureSpan">npmd.install.</span>commands
+            <span class="apidocSignatureSpan">(db, cache, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.packages">module npmd.packages</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.packages.cli">
+            function <span class="apidocSignatureSpan">npmd.packages.</span>cli
+            <span class="apidocSignatureSpan">(db, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.readme">module npmd.readme</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.readme.cli">
+            function <span class="apidocSignatureSpan">npmd.readme.</span>cli
+            <span class="apidocSignatureSpan">(db, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.resolve">module npmd.resolve</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.resolve.cli">
+            function <span class="apidocSignatureSpan">npmd.resolve.</span>cli
+            <span class="apidocSignatureSpan">(db, cache)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.resolve.db">
+            function <span class="apidocSignatureSpan">npmd.resolve.</span>db
+            <span class="apidocSignatureSpan">(db, cache, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.tree">module npmd.tree</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.tree.cli">
+            function <span class="apidocSignatureSpan">npmd.tree.</span>cli
+            <span class="apidocSignatureSpan">(db)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.versions">module npmd.versions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.versions.cli">
+            function <span class="apidocSignatureSpan">npmd.versions.</span>cli
+            <span class="apidocSignatureSpan">(db, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd" id="apidoc.module.npmd">module npmd</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.add" id="apidoc.module.npmd.add">module npmd.add</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.add.cli" id="apidoc.element.npmd.add.cli">
+        function <span class="apidocSignatureSpan">npmd.add.</span>cli
+        <span class="apidocSignatureSpan">(db)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db) {
+
+  db.commands.push(function (db, config, cb) {
+    var args = config._.slice()
+    if(args.shift() !== 'add') return
+    addDeps(process.cwd(), args, config, cb)
+    return true
+  })
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.dependents" id="apidoc.module.npmd.dependents">module npmd.dependents</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.dependents.cli" id="apidoc.element.npmd.dependents.cli">
+        function <span class="apidocSignatureSpan">npmd.dependents.</span>cli
+        <span class="apidocSignatureSpan">(db)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db) {
+    var seen = {}
+    db.commands.push(function (db, config, cb) {
+        var args = config._.slice();
+        if (args.shift() != "dependents") return;
+
+        var modulenames = args;
+
+        db.sublevel('ver').createReadStream({
+        }).on('data', function (data) {
+            var pkg = data.value;
+
+            if (pkg.hasOwnProperty("dependencies") &amp;&amp; pkg.dependencies != null) {
+                var all = true;
+
+                modulenames.forEach(function (modulename) {
+                    if (!pkg.dependencies.hasOwnProperty(modulename))
+                        all = false;
+                });
+
+                // TODO: pipe this off into some stream other than process.stdout
+                if (all === true)
+                    if (config.verbose)
+                        console.log(pkg.name + "@" + pkg.version)
+                    else {
+                        if(seen[pkg.name]) return
+                        seen[pkg.name] = true
+                        console.log(pkg.name);
+                    }
+            }
+        }).on('end', cb);
+
+        return true;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.help" id="apidoc.module.npmd.help">module npmd.help</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.help.cli" id="apidoc.element.npmd.help.cli">
+        function <span class="apidocSignatureSpan">npmd.help.</span>cli
+        <span class="apidocSignatureSpan">(db, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db, config) {
+
+  db.commands.push(function (db, cache, config, cb) {
+    if(config._[0] !== 'help') return
+
+    fs.createReadStream(__dirname + '/../docs/' + (config._[1] || 'help') + '.md')
+    .on('end', cb)
+    .on('error', function () {
+      fs.readdir(__dirname + '/../docs/', function (err, list) {
+        console.log('npmd help \n  ' +
+          list
+          .map(function (e) { return e.replace(/.md$/, '') })
+          .filter(function (e) { return e!== 'help' })
+          .sort().join(', ')
+        )
+        cb()
+      })
+      fs.createReadStream(__dirname + '/../docs/' + (config._[1] || 'help') + '.md')
+
+    })
+    .pipe(process.stdout)
+
+    return true
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.install" id="apidoc.module.npmd.install">module npmd.install</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.install.commands" id="apidoc.element.npmd.install.commands">
+        function <span class="apidocSignatureSpan">npmd.install.</span>commands
+        <span class="apidocSignatureSpan">(db, cache, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">commands = function (db, cache, config) {
+
+  if(!cache.get) throw new Error('must have cache')
+  var install = require('npmd-install')(cache)
+
+  db.commands.push(function (db, cache, config, cb) {
+    var args = config._.slice()
+    if('install' !== args.shift()) return
+
+    var _args = args.slice(), data = ''
+    if(!process.stdin.isTTY)
+      process.stdin
+        .on('data', function (d) { data += d })
+        .on('end', function () { doInstall(JSON.parse(data)) })
+    else
+      db.resolve(args.slice(), config, function (err, tree) {
+        if(err) return cb(err)
+        doInstall(tree)
+      })
+
+    function doInstall (tree) {
+      install(tree, config, function (err, installed) {
+        if(err) return cb(err)
+
+        if(config.save || config.saveDev)
+          addDeps(config.path || process.cwd(), installed, config, next)
+        else next()
+
+        function next () {
+
+          build(_args[0], config, function (err) {
+
+            _args = _args.map(function (e) {
+              e = e.split('@').shift()
+              if(/^[./]/.test(e)) return e
+              return config.global
+                ? path.join(config.prefix, 'lib', 'node_modules', e)
+                : path.join(process.cwd(), 'node_modules', e)
+            })
+
+            bin.all(_args, config.bin, config, function (err) {
+              cb(err, installed)
+            })
+
+          })
+
+        }
+      })
+    }
+
+
+    return true
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.packages" id="apidoc.module.npmd.packages">module npmd.packages</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.packages.cli" id="apidoc.element.npmd.packages.cli">
+        function <span class="apidocSignatureSpan">npmd.packages.</span>cli
+        <span class="apidocSignatureSpan">(db, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db, config) {
+  db.commands.push(function (db, config, cb) {
+    var args = config._.slice()
+    if(args.shift() != 'packages') return
+    var module = args.shift() || ''
+    db.sublevel('pkg').createReadStream({
+      min: module , max: module + '~',
+      keys: false
+    }).on('data', function (data) {
+      var pkg = data
+      if(config.long)
+        console.log(JSON.stringify(pkg, null, 2))
+      else
+        console.log(pkg.name)
+    })
+    .on('end', cb)
+    return true
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.readme" id="apidoc.module.npmd.readme">module npmd.readme</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.readme.cli" id="apidoc.element.npmd.readme.cli">
+        function <span class="apidocSignatureSpan">npmd.readme.</span>cli
+        <span class="apidocSignatureSpan">(db, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db, config) {
+  db.commands.push(function (db, config, cb) {
+    var args = config._.slice()
+    if(args.shift() != 'readme') return
+    var module = args.shift()
+    db.sublevel('pkg').get(module, function (err, data) {
+      // console.log(arguments)
+      if(err) return cb(err)
+      if(!data.readme)
+        console.log('sorry, readme file not found.')
+      else
+        console.log(data.readme)
+
+      cb(null, data.readme || data)
+    })
+    return true
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.resolve" id="apidoc.module.npmd.resolve">module npmd.resolve</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.resolve.cli" id="apidoc.element.npmd.resolve.cli">
+        function <span class="apidocSignatureSpan">npmd.resolve.</span>cli
+        <span class="apidocSignatureSpan">(db, cache)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db, cache) {
+  db.commands.push(function (db, cache, config, cb) {
+    var args = config._.slice()
+    var cmd = args.shift()
+
+    if(cmd === 'resolve') {
+      db.resolve(args, config,
+        function (err, tree) {
+          if(err) return cb(err)
+          cb(null, tree)
+      })
+
+      return true
+    }
+
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.resolve.db" id="apidoc.element.npmd.resolve.db">
+        function <span class="apidocSignatureSpan">npmd.resolve.</span>db
+        <span class="apidocSignatureSpan">(db, cache, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">db = function (db, cache, config) {
+
+  var resolve = createResolve(null, cache, config)
+  db.methods.resolve = {type: 'async'}
+  db.resolve = function (module, opts, cb) {
+    if(!cb) cb = opts, opts = {}
+    if(opts.hash) opts.greedy = false
+
+    if(!module || !module.length)
+      module = deps(process.cwd(), config)
+
+    ls(function (err, tree) {
+      if(err) return cb(err)
+      resolve(module,
+          merge({
+            greedy: opts.greedy,
+            available: tree
+          }, config),
+        cb
+      )
+    })
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  })
+}
+
+function addDb (db, cache, config) {
+  db.config = config
+  plugins.forEach(function (e) {
+    if('function' === typeof e.db)
+      e.<span class="apidocCodeKeywordSpan">db</span>(db, cache, config)
+  })
+}
+
+//TODO: make a middleware like thing but with
+//cli commands.
+
+function execCommands (db, config, cb) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.tree" id="apidoc.module.npmd.tree">module npmd.tree</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.tree.cli" id="apidoc.element.npmd.tree.cli">
+        function <span class="apidocSignatureSpan">npmd.tree.</span>cli
+        <span class="apidocSignatureSpan">(db)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db) {
+  db.commands.push(function (db, cache, config, cb) {
+    var args = config._.slice()
+    var cmd = args.shift()
+
+    if(cmd == 'tree') {
+      tree.tree(config.installPath, config, function (err, tree) {
+        if(err) throw err
+        cb(null, tree)
+      })
+    }
+    else if(cmd == 'ls')
+      tree.ls(config.installPath, function (err, tree) {
+        if(err) throw err
+        cb(null, tree)
+      })
+    else
+      return
+
+    return true
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.versions" id="apidoc.module.npmd.versions">module npmd.versions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.versions.cli" id="apidoc.element.npmd.versions.cli">
+        function <span class="apidocSignatureSpan">npmd.versions.</span>cli
+        <span class="apidocSignatureSpan">(db, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cli = function (db, config) {
+  db.commands.push(function (db, config, cb) {
+    var args = config._.slice()
+    if(args.shift() != 'versions') return
+    var module = args.shift()
+    db.sublevel('ver').createReadStream({
+      min: module + '!', max: module + '!~'
+    }).on('data', function (data) {
+      var pkg = data.value
+      if(config.long)
+        console.log(pkg)
+      else
+        console.log(pkg.name + '@' + pkg.version)
+    })
+    .on('end', cb)
+    return true
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
