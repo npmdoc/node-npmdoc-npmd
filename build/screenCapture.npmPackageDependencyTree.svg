@@ -66,7 +66,7 @@
 <tspan x="10" y="1018">  │ │ │   ├── fs.realpath@1.0.0 </tspan>
 <tspan x="10" y="1034">  │ │ │   ├── inflight@1.0.6 </tspan>
 <tspan x="10" y="1050">  │ │ │   ├─┬ minimatch@3.0.3 </tspan>
-<tspan x="10" y="1066">  │ │ │   │ └─┬ brace-expansion@1.1.6 </tspan>
+<tspan x="10" y="1066">  │ │ │   │ └─┬ brace-expansion@1.1.7 </tspan>
 <tspan x="10" y="1082">  │ │ │   │   ├── balanced-match@0.4.2 </tspan>
 <tspan x="10" y="1098">  │ │ │   │   └── concat-map@0.0.1 </tspan>
 <tspan x="10" y="1114">  │ │ │   ├── once@1.4.0 </tspan>
