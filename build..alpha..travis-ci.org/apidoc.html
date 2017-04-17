@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.options">
+            function <span class="apidocSignatureSpan">npmd.</span>options
+            <span class="apidocSignatureSpan">(funs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npmd.</span>add</span>
 
         </li>
@@ -169,6 +178,19 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.npmd.options">module npmd.options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npmd.options.options">
+            function <span class="apidocSignatureSpan">npmd.</span>options
+            <span class="apidocSignatureSpan">(funs)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.npmd.packages">module npmd.packages</a><ol>
 
         <li>
@@ -247,6 +269,32 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.npmd" id="apidoc.module.npmd">module npmd</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.options" id="apidoc.element.npmd.options">
+        function <span class="apidocSignatureSpan">npmd.</span>options
+        <span class="apidocSignatureSpan">(funs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">options = function (funs) {
+  if(!Array.isArray(funs))
+    funs = [].slice.call(arguments)
+
+  return function () {
+    var args = [].slice.call(arguments)
+    var called
+    for(var i in funs) {
+      if(called = funs[i].apply(null, args))
+        break;
+    }
+    return called
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
 
@@ -453,6 +501,37 @@
 
     return true
   })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npmd.options" id="apidoc.module.npmd.options">module npmd.options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npmd.options.options" id="apidoc.element.npmd.options.options">
+        function <span class="apidocSignatureSpan">npmd.</span>options
+        <span class="apidocSignatureSpan">(funs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">options = function (funs) {
+  if(!Array.isArray(funs))
+    funs = [].slice.call(arguments)
+
+  return function () {
+    var args = [].slice.call(arguments)
+    var called
+    for(var i in funs) {
+      if(called = funs[i].apply(null, args))
+        break;
+    }
+    return called
+  }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
