@@ -1,4 +1,7 @@
-# api documentation for  [npmd (v1.4.0)](https://github.com/dominictarr/npmd)  [![npm package](https://img.shields.io/npm/v/npmdoc-npmd.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npmd) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npmd.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npmd)
+# npmdoc-npmd
+
+#### basic api documentation for  [npmd (v1.4.0)](https://github.com/dominictarr/npmd)  [![npm package](https://img.shields.io/npm/v/npmdoc-npmd.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npmd) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npmd.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npmd)
+
 #### distributed npm client
 
 [![NPM](https://nodei.co/npm/npmd.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/npmd)
